@@ -21,7 +21,7 @@ public class Chapter2optional {
         List<WebElement> menuItems = driver.findElements(By.tagName("li"));
         System.out.println("Number of menu items: " + menuItems.size());
   
-        //driver.quit(); //this will close all windows and end the session
+        //driver.quit();    // this will close all windows and end the session
     }
 
     public static void main(String args[]){
