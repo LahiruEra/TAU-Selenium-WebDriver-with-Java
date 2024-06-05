@@ -3,14 +3,20 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import pages.HomePage;
+
 public class BaseTests {
 
 	private WebDriver driver;
+	protected HomePage homePage;
 	
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lahiru\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/"); //adding the web url which need to visit
+		
+		
+		homePage = new HomePage(driver); //call from the framework that we set
 		
 		driver.manage().window().maximize(); //manage().window() provide us methods to allow us to manage the window. ex: maximize(),fullscreen(),
 		
