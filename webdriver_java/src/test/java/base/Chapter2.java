@@ -17,7 +17,7 @@ public class Chapter2 {
         WebElement inputsLink = driver.findElement(By.linkText("Inputs"));
         inputsLink.click();
 
-        //driver.quit();
+        //driver.quit(); //close windows and the session
     }
 
     public static void main(String args[]){
