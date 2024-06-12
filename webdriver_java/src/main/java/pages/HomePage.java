@@ -40,6 +40,11 @@ public class HomePage {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
+    
+    public DynamicLoadingPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
 
 
     private void clickLink(String linkText){
