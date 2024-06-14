@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class JavaScriptTests extends BaseTests {
 
     /************************************************************
-     NOTE: We did not add assertions to these tests in the video
+     NOTE: We did not add assertions to these tests in the video.
     ************************************************************/
 
     @Test
